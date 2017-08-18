@@ -125,7 +125,6 @@ namespace AccountManager
         private void CancelButton_Click(object sender, EventArgs e)
         {
             _nowMode = Mode.Normal;
-            ShowNowData();
             Reset(_nowMode);
         }
 
@@ -221,6 +220,7 @@ namespace AccountManager
             {
                 box.Text = string.Empty;
             }
+            TagText.Text = string.Empty;
         }
 
         private void ShowNowData()
